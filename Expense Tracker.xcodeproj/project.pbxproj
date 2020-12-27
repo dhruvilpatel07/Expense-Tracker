@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		A125A0302597D950004389F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A02F2597D950004389F6 /* AppDelegate.swift */; };
 		A125A0322597D950004389F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0312597D950004389F6 /* SceneDelegate.swift */; };
-		A125A0342597D950004389F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0332597D950004389F6 /* ViewController.swift */; };
+		A125A0342597D950004389F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0332597D950004389F6 /* HomeViewController.swift */; };
 		A125A0372597D950004389F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A125A0352597D950004389F6 /* Main.storyboard */; };
 		A125A03A2597D950004389F6 /* Expense_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A125A0382597D950004389F6 /* Expense_Tracker.xcdatamodeld */; };
 		A125A03C2597D952004389F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A125A03B2597D952004389F6 /* Assets.xcassets */; };
 		A125A03F2597D952004389F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A125A03D2597D952004389F6 /* LaunchScreen.storyboard */; };
+		A125A0502597E746004389F6 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A04F2597E746004389F6 /* CategoryViewController.swift */; };
+		A125A0532597E75E004389F6 /* AddNewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0522597E75E004389F6 /* AddNewEntryViewController.swift */; };
+		A125A0562597E775004389F6 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0552597E775004389F6 /* ChartViewController.swift */; };
+		A125A0592597E783004389F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0582597E783004389F6 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A125A02C2597D950004389F6 /* Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A125A02F2597D950004389F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A125A0312597D950004389F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A125A0332597D950004389F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A125A0332597D950004389F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A125A0362597D950004389F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A125A0392597D950004389F6 /* Expense_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expense_Tracker.xcdatamodel; sourceTree = "<group>"; };
 		A125A03B2597D952004389F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A125A03E2597D952004389F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A125A0402597D952004389F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A125A04F2597E746004389F6 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		A125A0522597E75E004389F6 /* AddNewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEntryViewController.swift; sourceTree = "<group>"; };
+		A125A0552597E775004389F6 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		A125A0582597E783004389F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,60 @@
 		A125A02E2597D950004389F6 /* Expense Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				A125A04C2597D9EC004389F6 /* Database */,
+				A125A04B2597D9DF004389F6 /* Model */,
+				A125A04A2597D9CA004389F6 /* Controllers */,
+				A125A0492597D9B0004389F6 /* Storyboard */,
+				A125A0482597D99B004389F6 /* App */,
+				A125A0402597D952004389F6 /* Info.plist */,
+			);
+			path = "Expense Tracker";
+			sourceTree = "<group>";
+		};
+		A125A0482597D99B004389F6 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				A125A02F2597D950004389F6 /* AppDelegate.swift */,
 				A125A0312597D950004389F6 /* SceneDelegate.swift */,
-				A125A0332597D950004389F6 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A125A0492597D9B0004389F6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				A125A0352597D950004389F6 /* Main.storyboard */,
 				A125A03B2597D952004389F6 /* Assets.xcassets */,
 				A125A03D2597D952004389F6 /* LaunchScreen.storyboard */,
-				A125A0402597D952004389F6 /* Info.plist */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A125A04A2597D9CA004389F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A125A0332597D950004389F6 /* HomeViewController.swift */,
+				A125A04F2597E746004389F6 /* CategoryViewController.swift */,
+				A125A0522597E75E004389F6 /* AddNewEntryViewController.swift */,
+				A125A0552597E775004389F6 /* ChartViewController.swift */,
+				A125A0582597E783004389F6 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A125A04B2597D9DF004389F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A125A04C2597D9EC004389F6 /* Database */ = {
+			isa = PBXGroup;
+			children = (
 				A125A0382597D950004389F6 /* Expense_Tracker.xcdatamodeld */,
 			);
-			path = "Expense Tracker";
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A125A0342597D950004389F6 /* ViewController.swift in Sources */,
+				A125A0502597E746004389F6 /* CategoryViewController.swift in Sources */,
+				A125A0562597E775004389F6 /* ChartViewController.swift in Sources */,
+				A125A0342597D950004389F6 /* HomeViewController.swift in Sources */,
+				A125A0532597E75E004389F6 /* AddNewEntryViewController.swift in Sources */,
 				A125A0302597D950004389F6 /* AppDelegate.swift in Sources */,
 				A125A0322597D950004389F6 /* SceneDelegate.swift in Sources */,
+				A125A0592597E783004389F6 /* ProfileViewController.swift in Sources */,
 				A125A03A2597D950004389F6 /* Expense_Tracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPAWQLXXWM;
 				INFOPLIST_FILE = "Expense Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhruvil.Expense-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPAWQLXXWM;
 				INFOPLIST_FILE = "Expense Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhruvil.Expense-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
