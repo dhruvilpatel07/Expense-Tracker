@@ -1,0 +1,25 @@
+//
+//  CustomCardView.swift
+//  Expense Tracker
+//
+//  Created by Dhruvil Patel on 2020-12-27.
+//
+
+import Foundation
+import UIKit
+
+@IBDesignable class CustomCardView : UIView{
+    @IBInspectable var cornerRadius : CGFloat = 3
+    var offSetWidth: CGFloat = 1
+    var offSetHeight: CGFloat = 1
+    var offSetShadowOpacity : Float = 0.5
+    @IBInspectable var shadowColor : UIColor = UIColor.gray
+    
+    override func layoutSubviews() {
+        layer.cornerRadius = self.cornerRadius
+        layer.shadowColor = self.shadowColor.cgColor
+        layer.shadowOffset = CGSize(width: self.offSetWidth, height: self.offSetHeight)
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: self.cornerRadius).cgPath
+        layer.shadowOpacity = self.offSetShadowOpacity
+    }
+}

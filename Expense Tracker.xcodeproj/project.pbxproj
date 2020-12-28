@@ -18,6 +18,10 @@
 		A125A0532597E75E004389F6 /* AddNewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0522597E75E004389F6 /* AddNewEntryViewController.swift */; };
 		A125A0562597E775004389F6 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0552597E775004389F6 /* ChartViewController.swift */; };
 		A125A0592597E783004389F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0582597E783004389F6 /* ProfileViewController.swift */; };
+		A171F054259918C900DBC3C9 /* CustomCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A171F053259918C900DBC3C9 /* CustomCardTableViewCell.swift */; };
+		A171F05D25994BEE00DBC3C9 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A171F05C25994BEE00DBC3C9 /* CustomCardView.swift */; };
+		A171F062259A247C00DBC3C9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A171F061259A247C00DBC3C9 /* Extensions.swift */; };
+		A171F067259A31BC00DBC3C9 /* CustomCardCellConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A171F066259A31BC00DBC3C9 /* CustomCardCellConditions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		A125A0522597E75E004389F6 /* AddNewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEntryViewController.swift; sourceTree = "<group>"; };
 		A125A0552597E775004389F6 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		A125A0582597E783004389F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A171F053259918C900DBC3C9 /* CustomCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardTableViewCell.swift; sourceTree = "<group>"; };
+		A171F05C25994BEE00DBC3C9 /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
+		A171F061259A247C00DBC3C9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A171F066259A31BC00DBC3C9 /* CustomCardCellConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardCellConditions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		A125A02E2597D950004389F6 /* Expense Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				A171F060259A245000DBC3C9 /* Resources */,
 				A125A04C2597D9EC004389F6 /* Database */,
 				A125A04B2597D9DF004389F6 /* Model */,
 				A125A04A2597D9CA004389F6 /* Controllers */,
@@ -98,6 +107,9 @@
 		A125A04A2597D9CA004389F6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A171F065259A317F00DBC3C9 /* Custom Cell Conditions */,
+				A171F0562599467400DBC3C9 /* Custom Views */,
+				A171F05125990F3400DBC3C9 /* Custom Cell */,
 				A125A0332597D950004389F6 /* HomeViewController.swift */,
 				A125A04F2597E746004389F6 /* CategoryViewController.swift */,
 				A125A0522597E75E004389F6 /* AddNewEntryViewController.swift */,
@@ -120,6 +132,38 @@
 				A125A0382597D950004389F6 /* Expense_Tracker.xcdatamodeld */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		A171F05125990F3400DBC3C9 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A171F053259918C900DBC3C9 /* CustomCardTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		A171F0562599467400DBC3C9 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				A171F05C25994BEE00DBC3C9 /* CustomCardView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		A171F060259A245000DBC3C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A171F061259A247C00DBC3C9 /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A171F065259A317F00DBC3C9 /* Custom Cell Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				A171F066259A31BC00DBC3C9 /* CustomCardCellConditions.swift */,
+			);
+			path = "Custom Cell Conditions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +242,11 @@
 				A125A0532597E75E004389F6 /* AddNewEntryViewController.swift in Sources */,
 				A125A0302597D950004389F6 /* AppDelegate.swift in Sources */,
 				A125A0322597D950004389F6 /* SceneDelegate.swift in Sources */,
+				A171F054259918C900DBC3C9 /* CustomCardTableViewCell.swift in Sources */,
+				A171F05D25994BEE00DBC3C9 /* CustomCardView.swift in Sources */,
+				A171F067259A31BC00DBC3C9 /* CustomCardCellConditions.swift in Sources */,
 				A125A0592597E783004389F6 /* ProfileViewController.swift in Sources */,
+				A171F062259A247C00DBC3C9 /* Extensions.swift in Sources */,
 				A125A03A2597D950004389F6 /* Expense_Tracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPAWQLXXWM;
 				INFOPLIST_FILE = "Expense Tracker/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPAWQLXXWM;
 				INFOPLIST_FILE = "Expense Tracker/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
