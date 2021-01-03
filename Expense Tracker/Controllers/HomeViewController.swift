@@ -46,7 +46,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let index = indexPath.row
         cell.backgroundColor = UIColor.clear
         cell.selectionStyle = .none
-        cell.configure_cell(img: images[index], title: info_title[index], date: date[index], amount: amount[index], subCategory: subCategory[index], incomeOrExpense: incomeOrExpense[index])
+        cell.configure_cell(img: images[index], title: info_title[index], date: date[index], amount: amount[index], incomeOrExpense: incomeOrExpense[index])
         
         return cell
     }

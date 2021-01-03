@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1144883259BA84E004F83DF /* CustomCategoryViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1144882259BA84E004F83DF /* CustomCategoryViewTableViewCell.swift */; };
 		A125A0302597D950004389F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A02F2597D950004389F6 /* AppDelegate.swift */; };
 		A125A0322597D950004389F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0312597D950004389F6 /* SceneDelegate.swift */; };
 		A125A0342597D950004389F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125A0332597D950004389F6 /* HomeViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1144882259BA84E004F83DF /* CustomCategoryViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCategoryViewTableViewCell.swift; sourceTree = "<group>"; };
 		A125A02C2597D950004389F6 /* Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A125A02F2597D950004389F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A125A0312597D950004389F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A171F053259918C900DBC3C9 /* CustomCardTableViewCell.swift */,
+				A1144882259BA84E004F83DF /* CustomCategoryViewTableViewCell.swift */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				A171F067259A31BC00DBC3C9 /* CustomCardCellConditions.swift in Sources */,
 				A125A0592597E783004389F6 /* ProfileViewController.swift in Sources */,
 				A171F062259A247C00DBC3C9 /* Extensions.swift in Sources */,
+				A1144883259BA84E004F83DF /* CustomCategoryViewTableViewCell.swift in Sources */,
 				A125A03A2597D950004389F6 /* Expense_Tracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

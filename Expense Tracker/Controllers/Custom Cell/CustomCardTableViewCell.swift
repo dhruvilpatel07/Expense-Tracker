@@ -25,8 +25,16 @@ class CustomCardTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure_cell(img: UIImage, title: String, date: String, amount: String, subCategory: String, incomeOrExpense: String) {
-        CustomCardCellConditions.shared.setTintColor(subCategoryName: subCategory, img: img_category)
+    
+    /// Setting up cell by passing all values
+    /// - Parameters:
+    ///   - img: Category image
+    ///   - title: Transaction title
+    ///   - date: Transaction date
+    ///   - amount: Transaction amount
+    ///   - incomeOrExpense: is Transaction income or expense
+    func configure_cell(img: UIImage, title: String, date: String, amount: String, incomeOrExpense: String) {
+        CustomCardCellConditions.shared.setTintColor(incOrExp: incomeOrExpense, img: img_category)
         CustomCardCellConditions.shared.checkIncomeOrExpense(incOrExp: incomeOrExpense, amount_lbl: lbl_amount)
         img_category.image = img
         lbl_title.text = title

@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-@IBDesignable class CustomCardView : UIView{
-    @IBInspectable var cornerRadius : CGFloat = 3
+class CustomCardView : UIView{
+    var cornerRadius : CGFloat = 3
     var offSetWidth: CGFloat = 1
     var offSetHeight: CGFloat = 1
     var offSetShadowOpacity : Float = 0.5
-    @IBInspectable var shadowColor : UIColor = UIColor.gray
+    var shadowColor : UIColor = UIColor.gray
     
     override func layoutSubviews() {
         layer.cornerRadius = self.cornerRadius
