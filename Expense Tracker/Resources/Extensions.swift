@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: -UIImage Extension
 extension UIImage{
     
     
@@ -56,7 +57,7 @@ extension UIImage{
     
 }
 
-///Extension for View Controller
+// MARK: - Extension for UIViewController
 extension UIViewController {
     
     /// Dismiss keyboard when tapped anywhere on screen

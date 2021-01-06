@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController{
 
     let images: [UIImage] = [
         UIImage(systemName: "airplane.circle.fill")!,
@@ -36,7 +36,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         img_gradient_background.layer.masksToBounds = true
         img_gradient_background.layer.cornerRadius = self.img_gradient_background.frame.height / 15.0
     }
-    
+
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return images.count
     }
@@ -50,6 +53,5 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         return cell
     }
-
 }
 

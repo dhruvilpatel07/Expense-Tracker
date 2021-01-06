@@ -7,14 +7,14 @@
 
 import UIKit
 
-class CategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CategoryViewController: UIViewController {
 
     
     @IBOutlet weak var search_bar_category: UISearchBar!
     @IBOutlet weak var tbl_view_category: UITableView!
     
     let info_title = [
-        ["Fly to Paris", "Car Insurance", "Salary"],
+        ["transportation", "Car Insurance", "Salary"],
         [ "Clothes", "Home Rent" , "Groceries"]
     ]
     let titleCategory = ["Food", "Entertainment"]
@@ -24,6 +24,21 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         self.hideKeyboardWhenTappedAround()
         
     }
+    
+    
+    
+    /// Removes backgroud color of searchbar and adds white color tint
+    func remove_searchbar_background() {
+        search_bar_category.backgroundColor = UIColor.clear
+        search_bar_category.searchTextField.textColor = UIColor.black
+        search_bar_category.isTranslucent = true
+        search_bar_category.searchTextField.backgroundColor = UIColor.white
+        search_bar_category.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
+
+    }
+}
+
+extension CategoryViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return info_title[section].count
@@ -61,15 +76,5 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         (view as! UITableViewHeaderFooterView).contentView.backgroundColor = UIColor.systemBackground
         (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.secondaryLabel
-    }
-    
-    /// Removes backgroud color of searchbar and adds white color tint
-    func remove_searchbar_background() {
-        search_bar_category.backgroundColor = UIColor.clear
-        search_bar_category.searchTextField.textColor = UIColor.black
-        search_bar_category.isTranslucent = true
-        search_bar_category.searchTextField.backgroundColor = UIColor.white
-        search_bar_category.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
-
     }
 }
