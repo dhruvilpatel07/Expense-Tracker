@@ -18,14 +18,26 @@ class CategoryViewController: UIViewController {
         [ "Clothes", "Home Rent" , "Groceries"]
     ]
     let titleCategory = ["Food", "Entertainment"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         remove_searchbar_background()
         self.hideKeyboardWhenTappedAround()
         
+        //Code for UIRefreshControl()
+        tbl_view_category.refreshControl = UIRefreshControl()
+        tbl_view_category.refreshControl?.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
     }
     
-    
+    //Method to handle refresh when table view is pulled down
+    @objc func handleRefreshControl(){
+        //update table view
+        tbl_view_category.reloadData()
+        
+        DispatchQueue.main.async {
+            self.tbl_view_category.refreshControl?.endRefreshing()
+        }
+    }
     
     /// Removes backgroud color of searchbar and adds white color tint
     func remove_searchbar_background() {
@@ -35,6 +47,10 @@ class CategoryViewController: UIViewController {
         search_bar_category.searchTextField.backgroundColor = UIColor.white
         search_bar_category.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
 
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        search_bar_category.text = ""
     }
 }
 

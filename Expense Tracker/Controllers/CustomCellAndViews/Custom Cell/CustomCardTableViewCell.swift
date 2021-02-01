@@ -34,7 +34,9 @@ class CustomCardTableViewCell: UITableViewCell {
     ///   - amount: Transaction amount
     ///   - incomeOrExpense: is Transaction income or expense
     func configure_cell(img: UIImage, title: String, date: String, amount: String, incomeOrExpense: String) {
+        //Changes image tint color based on income or expense condition
         CustomCardCellConditions.shared.setTintColor(incOrExp: incomeOrExpense, img: img_category)
+        //Changes transaction label color based on income or expense condition
         CustomCardCellConditions.shared.checkIncomeOrExpense(incOrExp: incomeOrExpense, amount_lbl: lbl_amount)
         img_category.image = img
         lbl_title.text = title

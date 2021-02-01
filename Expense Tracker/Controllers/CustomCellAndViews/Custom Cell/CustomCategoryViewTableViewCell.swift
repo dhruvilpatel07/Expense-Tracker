@@ -22,6 +22,7 @@ class CustomCategoryViewTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //Setting up cell items
     func configure_cell(img: UIImage, category_name: String) {
         img_category_type.image = img
         lbl_category_name.text = category_name

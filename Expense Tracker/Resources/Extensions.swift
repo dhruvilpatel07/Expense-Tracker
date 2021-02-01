@@ -8,6 +8,7 @@
 import UIKit
 
 // MARK: -UIImage Extension
+// MARK: - Delete this section if needed
 extension UIImage{
     
     

@@ -23,6 +23,7 @@
 		A171F05D25994BEE00DBC3C9 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A171F05C25994BEE00DBC3C9 /* CustomCardView.swift */; };
 		A171F062259A247C00DBC3C9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A171F061259A247C00DBC3C9 /* Extensions.swift */; };
 		A171F067259A31BC00DBC3C9 /* CustomCardCellConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A171F066259A31BC00DBC3C9 /* CustomCardCellConditions.swift */; };
+		A1ED3D0C25C81A0D00F5340C /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED3D0B25C81A0D00F5340C /* SelectCategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A171F05C25994BEE00DBC3C9 /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
 		A171F061259A247C00DBC3C9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A171F066259A31BC00DBC3C9 /* CustomCardCellConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardCellConditions.swift; sourceTree = "<group>"; };
+		A1ED3D0B25C81A0D00F5340C /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +111,12 @@
 		A125A04A2597D9CA004389F6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A171F065259A317F00DBC3C9 /* Custom Cell Conditions */,
-				A171F0562599467400DBC3C9 /* Custom Views */,
-				A171F05125990F3400DBC3C9 /* Custom Cell */,
-				A125A0332597D950004389F6 /* HomeViewController.swift */,
-				A125A04F2597E746004389F6 /* CategoryViewController.swift */,
-				A125A0522597E75E004389F6 /* AddNewEntryViewController.swift */,
-				A125A0552597E775004389F6 /* ChartViewController.swift */,
-				A125A0582597E783004389F6 /* ProfileViewController.swift */,
+				A1ED3D0A25C819B800F5340C /* CustomCellAndViews */,
+				A1ED3D0425C8196500F5340C /* HomeControllers */,
+				A1ED3D0525C8197700F5340C /* CategoryControllers */,
+				A1ED3D0225C8192F00F5340C /* AddNewEntryControllers */,
+				A1ED3D0725C8198C00F5340C /* ChartControllers */,
+				A1ED3D0925C8199800F5340C /* ProfileControllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -167,6 +167,57 @@
 				A171F066259A31BC00DBC3C9 /* CustomCardCellConditions.swift */,
 			);
 			path = "Custom Cell Conditions";
+			sourceTree = "<group>";
+		};
+		A1ED3D0225C8192F00F5340C /* AddNewEntryControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A125A0522597E75E004389F6 /* AddNewEntryViewController.swift */,
+				A1ED3D0B25C81A0D00F5340C /* SelectCategoryViewController.swift */,
+			);
+			path = AddNewEntryControllers;
+			sourceTree = "<group>";
+		};
+		A1ED3D0425C8196500F5340C /* HomeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A125A0332597D950004389F6 /* HomeViewController.swift */,
+			);
+			path = HomeControllers;
+			sourceTree = "<group>";
+		};
+		A1ED3D0525C8197700F5340C /* CategoryControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A125A04F2597E746004389F6 /* CategoryViewController.swift */,
+			);
+			path = CategoryControllers;
+			sourceTree = "<group>";
+		};
+		A1ED3D0725C8198C00F5340C /* ChartControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A125A0552597E775004389F6 /* ChartViewController.swift */,
+			);
+			path = ChartControllers;
+			sourceTree = "<group>";
+		};
+		A1ED3D0925C8199800F5340C /* ProfileControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A125A0582597E783004389F6 /* ProfileViewController.swift */,
+			);
+			path = ProfileControllers;
+			sourceTree = "<group>";
+		};
+		A1ED3D0A25C819B800F5340C /* CustomCellAndViews */ = {
+			isa = PBXGroup;
+			children = (
+				A171F065259A317F00DBC3C9 /* Custom Cell Conditions */,
+				A171F0562599467400DBC3C9 /* Custom Views */,
+				A171F05125990F3400DBC3C9 /* Custom Cell */,
+			);
+			path = CustomCellAndViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +292,7 @@
 			files = (
 				A125A0502597E746004389F6 /* CategoryViewController.swift in Sources */,
 				A125A0562597E775004389F6 /* ChartViewController.swift in Sources */,
+				A1ED3D0C25C81A0D00F5340C /* SelectCategoryViewController.swift in Sources */,
 				A125A0342597D950004389F6 /* HomeViewController.swift in Sources */,
 				A125A0532597E75E004389F6 /* AddNewEntryViewController.swift in Sources */,
 				A125A0302597D950004389F6 /* AppDelegate.swift in Sources */,

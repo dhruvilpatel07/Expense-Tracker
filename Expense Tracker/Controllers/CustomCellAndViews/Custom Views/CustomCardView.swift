@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+/// Custom card view for HomeViewController
 class CustomCardView : UIView{
     var cornerRadius : CGFloat = 3
     var offSetWidth: CGFloat = 1
