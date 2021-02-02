@@ -26,19 +26,25 @@ class AddNewEntryViewController: UIViewController {
         
     }
     
+    //Reset the form/new entry
+    func resetForm() {
+        sg_Expense_or_Income.selectedSegmentIndex = 0
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        /// - If destination view controller is SelectCategoryViewController
-        if let vc = segue.destination as? SelectCategoryViewController {
-            switch sg_Expense_or_Income.selectedSegmentIndex {
-            case 0:
-                vc.text = "Expense"
-            case 1:
-                vc.text = "Income"
-            default:
-                break
-            }
-        }
+//        /// - If destination view controller is SelectCategoryViewController
+//        if let vc = segue.destination as? SelectCategoryViewController {
+//            switch sg_Expense_or_Income.selectedSegmentIndex {
+//            case 0:
+//                vc.text = "Expense"
+//            case 1:
+//                vc.text = "Income"
+//            default:
+//                break
+//            }
+//            vc.addNewEntryViewController = self
+//        }
         
         
     }
