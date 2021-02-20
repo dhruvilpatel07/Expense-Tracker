@@ -10,7 +10,7 @@
 - Xcode
 - Swift
 - Core Data
-- Push Notifications
+- Local Notifications
 
  ## Demo of app
  <img src="mockup/expenseTrackerLight.png" width="400"> <img src="mockup/expenseTrackerDark.png" width="400">
