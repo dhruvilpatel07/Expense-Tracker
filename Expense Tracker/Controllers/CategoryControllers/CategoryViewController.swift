@@ -17,7 +17,7 @@ class CategoryViewController: UIViewController {
         ["transportation", "Car Insurance", "Salary"],
         [ "Clothes", "Home Rent" , "Groceries"]
     ]
-    let titleCategory = ["Food", "Entertainment"]
+    let titleCategory = ["Income", "Expense"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

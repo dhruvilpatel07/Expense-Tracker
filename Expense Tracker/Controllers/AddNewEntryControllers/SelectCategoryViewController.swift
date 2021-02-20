@@ -21,9 +21,30 @@ class SelectCategoryViewController: UIViewController {
         "bag.circle.fill"
     ]
     
+    // Need to remove this
+    var subCategory: [String] = ["Travel", "Car", "Salary", "Shopping", "Home", "Shopping"]
+    
+    /// Getting value from AddNewEntryViewController after successful segue
+    var incomeOrExpense : String?
+    
+    // Need to remove this
+    let incomeOrExpenseArray: [String] = ["Expense", "Expense", "Income", "Expense", "Expense", "Expense"]
+    
+    // Appending final filer result to this array
+    var finalCategoryArray : [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Append value from subCategory to finalCategoryArray
+        if let text = incomeOrExpense {
+            for index in 0..<subCategory.count{
+                if incomeOrExpenseArray[index] == text {
+                    finalCategoryArray.append(subCategory[index])
+                }
+            }
+        }
+        
     }
     /// Reseting form to start over
     @IBAction func btn_start_over(_ sender: Any) {
@@ -36,15 +57,17 @@ class SelectCategoryViewController: UIViewController {
 
 extension SelectCategoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        images.count
+        return finalCategoryArray.count
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 57
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomAddNewEntrySelectCategoryCell
         let index = indexPath.row
-        cell.configure_cell(categoryName: images[index])
+        cell.configure_cell(categoryName: finalCategoryArray[index])
         cell.accessoryType = .disclosureIndicator
         return cell
     }

@@ -34,17 +34,17 @@ class AddNewEntryViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
 //        /// - If destination view controller is SelectCategoryViewController
-//        if let vc = segue.destination as? SelectCategoryViewController {
-//            switch sg_Expense_or_Income.selectedSegmentIndex {
-//            case 0:
-//                vc.text = "Expense"
-//            case 1:
-//                vc.text = "Income"
-//            default:
-//                break
-//            }
+        if let vc = segue.destination as? SelectCategoryViewController {
+            switch sg_Expense_or_Income.selectedSegmentIndex {
+            case 0:
+                vc.incomeOrExpense = "Expense"
+            case 1:
+                vc.incomeOrExpense = "Income"
+            default:
+                break
+            }
 //            vc.addNewEntryViewController = self
-//        }
+        }
         
         
     }
